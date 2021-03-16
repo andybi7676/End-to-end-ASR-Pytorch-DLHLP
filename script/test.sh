@@ -4,6 +4,7 @@
 # $1 : Experiment name
 # $2 : Cuda id
 
+
 CONFIG="dlhlp_test"
 DIR="/data/storage/harry/E2E_ASR"
 
