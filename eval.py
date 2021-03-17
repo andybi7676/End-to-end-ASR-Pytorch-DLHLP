@@ -17,6 +17,7 @@ def cal_wer(row):
     return 100*float(ed.eval(row.hyp.split(SEP),row.truth.split(SEP)))/len(row.truth.split(SEP))
 
 # Evaluation
+print(paras)
 result = pd.read_csv(paras.file,sep='\t',keep_default_na=False)
 result['hyp_char_cnt'] = result.apply(lambda x: len(x.hyp),axis=1)
 result['hyp_word_cnt'] = result.apply(lambda x: len(x.hyp.split(SEP)),axis=1)

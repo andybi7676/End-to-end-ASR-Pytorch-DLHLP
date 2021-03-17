@@ -2,14 +2,14 @@ data:
   corpus:                                 # Pass to dataloader
     # The following depends on corpus
     name: 'DLHLP'                         # Specify corpus
-    path: '/data/storage/harry/test_env/DLHLP'
+    path: '/work/b07502172/hw1_1/corpus/DLHLP'
     dev_split: ['dev']
     test_split: ['test']
     bucketing: False
     batch_size: 1
 src:
-  config: '/data/storage/harry/End-to-end-ASR-Pytorch/config/dlhlp_asr.yaml'
-  ckpt: '/data/storage/harry/test_env/dlhlp_ckpt/hw1_best_att_dev.pth'
+  config: '/work/b07502172/hw1_1/End-to-end-ASR-Pytorch-DLHLP/config/dlhlp_asr.yaml'
+  ckpt: '/work/b07502172/hw1_1/E2E_ASR/ckpt/202103161222/best_att_dev.pth'
 
 decode:
   beam_size: 1

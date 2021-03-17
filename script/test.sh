@@ -6,7 +6,7 @@
 
 
 CONFIG="dlhlp_test"
-DIR="/work/b07502172/hw1-1/E2E_ASR"
+DIR="/work/b07502172/hw1_1/E2E_ASR"
 
 echo "Start running testing process of E2E ASR"
 CUDA_VISIBLE_DEVICES=$2 python3 main.py --config config/${CONFIG}.yaml \
